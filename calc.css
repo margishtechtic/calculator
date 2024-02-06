@@ -1,0 +1,73 @@
+body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-color: rgb(85, 79, 79);
+ }
+
+ .main{
+    width: 350px;
+    height: 540px;
+    background-color: white;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 10px; 
+ }
+
+ .main input[type='text'] {
+    width: 100%;
+    position: relative;
+    height: 65px;
+    top: 10px;
+    text-align: right;
+    font-size: 40px;
+    border: 3px solid black;
+    display: flex;
+    margin-bottom: 15px;
+    border-left: 0px;
+    border-right: 0px;
+    color: black;
+ }
+
+
+ .btn input[type='button']{
+    width:78px;
+    padding: 2px;
+    margin: 2px 0px;
+    position: relative;
+    left: 13px;
+    top: 20px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+    border-radius: 20%;
+}
+
+
+.btn input[type='button']:hover{
+   background-color: rgb(73, 69, 69);
+   box-shadow: 2px;
+   color: rgb(255, 255, 255);
+}
+
+
+
+.container {
+   display: flex; /* Use flexbox for layout */
+   align-items: center; /* Vertically center the content */
+   margin-top: 5px; /* Add some spacing */
+   margin-bottom: 5px;
+   font-size: 20px;
+}
+.image {
+   width: 40px;
+   height: 40px; /* Adjust image width as needed */
+   margin-right: 20px;
+   margin-left: 5px; /* Add spacing between image and title */
+}
+
+
+
+
+
