@@ -20,6 +20,16 @@ function Solve(val) {
         v.value += val;
     }
 }
+function showInput(event){
+    var dis_val = document.getElementById("display").value;
+    if (dis_val == "0"){
+        document.getElementById("display").value = ""
+    }
+    if (event.key === 'Enter') {
+        Result();
+      }
+    
+}
 
 function Result()
 {
