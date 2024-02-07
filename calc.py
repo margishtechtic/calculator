@@ -7,23 +7,31 @@ class evaluateString:
 
     while(i<len(expression)):
         if(expression[i]>='0' and expression[i] <= '9'):
-            charNumber = [] #storing number digit by digit
+            charNumber = [] #to store number, digit by digit
             j = i
             while(j<len(expression) and expression[j]>='0' and expression[j] <= '9'):
                 charNumber.append(expression[j])
                 j += 1
             i = j-1
             valueStack.append(int(''.join(charNumber)))
+            print(valueStack)
+            print(opStack)
 
 
         elif(expression[i]=='+'or expression[i]=='-'or expression[i]=='*'or expression[i]=='/'):
             while( (len(opStack)!=0) and ( self.opPrecedence(expression[i],opStack[-1]) ) ):
                 valueStack.append(self.applyOperation(opStack.pop(),valueStack.pop(),valueStack.pop()))
             opStack.append(expression[i])
+            print(valueStack)
+            print(opStack)
         i= i + 1
+        print(valueStack)
+        print(opStack)
 
     while(len(opStack)!=0):
         valueStack.append(self.applyOperation(opStack.pop(),valueStack.pop(),valueStack.pop()))
+        print(valueStack)
+        print(opStack)
 
     return valueStack.pop()
 
@@ -50,8 +58,6 @@ class evaluateString:
 expression = input("enter infix expression")
 a = evaluateString()
 print(a.evalString(expression))
-
-
 
 
 
