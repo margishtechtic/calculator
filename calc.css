@@ -2,16 +2,20 @@ body{
     display: grid;
     height: 100vh;
     place-items: center;
-    background-color: rgb(177, 177, 177);
+    /* background-color: rgb(177, 177, 177); */
+    background-image: url('calculator.jpg'); 
+   background-size: cover;
+   background-position: center;
  }
 
  .main{
     width: 378px;
     height: 540px;
-    background-color: white;
+    background-color: transparent;
     position: absolute;
-    border: 2px solid black;
+    border: 2px solid rgb(19, 58, 104);
     border-radius: 10px; 
+    box-shadow: 3px 3px rgb(118, 193, 223);
  }
 
  .main input[type='text'] {
@@ -24,6 +28,10 @@ body{
     display: flex;
     margin-bottom: 15px;
     color: black;
+    background-color: transparent;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
  }
 
 
@@ -47,6 +55,14 @@ body{
    background-color: rgb(116, 130, 139);
    box-shadow: 2px;
    color: rgb(255, 255, 255);
+}
+
+.btn input[type='button']:active{
+   background-color: rgb(30, 37, 41);
+   transition-property: transform;
+   transition-duration: 0.3s;
+   transform: scale(1.10);
+   
 }
 
 

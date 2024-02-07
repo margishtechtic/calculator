@@ -14,11 +14,6 @@ inputElement.addEventListener("keydown", function(event) {
 
 
 
-
-
-
-
-
 function Clear(){
     document.getElementById('display').value = "0"
 }
