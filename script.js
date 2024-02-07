@@ -1,3 +1,24 @@
+const inputElement = document.getElementById("display");
+
+
+inputElement.addEventListener("input", function() {
+  this.value = this.value;
+});
+
+inputElement.addEventListener("keydown", function(event) {
+
+  setTimeout(() => {
+    this.scrollLeft = this.scrollWidth;
+  }, 0);
+});
+
+
+
+
+
+
+
+
 function Clear(){
     document.getElementById('display').value = "0"
 }
@@ -27,7 +48,12 @@ function showInput(event){
     }
     if (event.key === 'Enter') {
         Result();
-      }
+    }
+
+    if (event.key === 'Escape') 
+    {
+        Clear();
+    }
     
 }
 
