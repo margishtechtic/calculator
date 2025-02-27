@@ -62,7 +62,12 @@ print(a.evalString(expression))
 print("hello")
 
 
+print("hihi" , 10//0)
+
 prnt("hello")
+
+print("hi" == 123)
+
 
 
 
