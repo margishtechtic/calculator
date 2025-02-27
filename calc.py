@@ -62,6 +62,9 @@ print(a.evalString(expression))
 print("hello")
 
 
+prnt("hello")
+
+
 
 
 
